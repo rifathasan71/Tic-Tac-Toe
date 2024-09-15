@@ -1,14 +1,16 @@
- *{
-margin: 4;
-padding: 0;
+* {
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
-body{
-    background-color: #80475e;
+body {
+    background-color: #80475E; 
     text-align: center;
+    font-family: Arial, sans-serif; 
 }
 
-.container{
+.container {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -16,7 +18,7 @@ body{
     gap: 1.5vmin;
 }
 
-.game{
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -26,38 +28,49 @@ body{
     gap: 1.5vmin;
 }
 
-.box{
+.box {
     height: 18vmin;
     width: 18vmin;
     border-radius: 0.8rem;
     border: none;
     box-shadow: 0 0 1rem rgba(38, 33, 33, 0.3);
     font-size: 8vmin;
-    color: #235789;
-    background-color:#e6c1ba ;
+    color: #020202; 
+    background-color: #F9DBBD; 
+    cursor: pointer;
 }
-#reset{
+
+#reset {
     padding: 1rem;
     font-size: 1.25rem;
     border-radius: 1rem;
     border: none;
-    background-color: #020100;
+    background-color: #3AB795; 
     color: white;
+    cursor: pointer;
 }
-#new{
-    
+
+#new, #new2 {
     padding: 1rem;
     font-size: 1.25rem;
     border-radius: 1rem;
     border: none;
-    background-color: #020100;
+    background-color: #3AB795;
     color: white;
+    cursor: pointer; 
 }
-#msg{
-    color: beige;
+
+#msg {
+    color: #FFA5AB; 
     font-size: 8vmin;
 }
-.msg-container{
+
+#msgDraw {
+    color: #3AB795;
+    font-size: 8vmin;
+}
+
+.msg-container,.msg-container2 {
     height: 100vmin;
     display: flex;
     justify-content: center;
@@ -66,6 +79,17 @@ body{
     gap: 4rem;
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+.heading-word {
+    color: #ff6347; 
+    font-size: 5rem;
+    display: inline-block; 
+}
+
+
+.heading-word.alternate {
+    color: #4682b4; 
 }

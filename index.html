@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
-
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="msg-container hide">
-        <p id="msg"> Winner</p>
-        <button id="new"> New Game</button>
+        <p id="msg">Winner</p>
+        <button id="new">New Game</button>
+    </div>
+    <div class="msg-container2 hide">
+        <p id="msgDraw">Draw</p>
+        <button id="new2">New Game</button>
     </div>
     <main>
-        <h1>Tic-Tac-Toe</h1>
+        <h1>
+            <span class="heading-word">Tic</span>
+            <span class="heading-word alternate">Tac</span>
+            <span class="heading-word">Toe</span>
+        </h1>
         <div class="container">
             <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
         </div>
-        </div>
-        <button id="reset"> Reset</button>
+        <button id="reset">Reset</button>
     </main>
     <script src="app.js"></script>
 </body>
